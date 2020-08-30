@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import CollegeDetails from './CollegeDetails';
+import college from './college';
 function App() {
+  const display = () => {
+    var a=[]
+    for(var i=0;i<college.colleges.length;i++){
+      a.push(<CollegeDetails id={i+1} />)
+
+    }
+    return a;
+        
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h4 style={{marginLeft:"10px",color:"#716E6D"}}>Colleges in North India</h4>
+     {display()}
     </div>
   );
 }

@@ -1,0 +1,20 @@
+Given a binary tree, and 2 nodes as input, check if they are sibling of each other or not
+   A sibling node is one that has same parent
+   
+					  1
+				2			3
+				
+			4		5	6		7
+Ex - Input - 2,3
+return true
+Input - 5,6
+return false
+
+bool sibling(int n1,int n2){
+  if(root==null)
+     return false;
+   if(root.left==n1 && root.right==n2)
+        return true;
+     return false;
+          
+}
