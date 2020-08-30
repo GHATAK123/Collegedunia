@@ -19,6 +19,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                 style={{ objectFit: "cover"}}
               />
               <div class="corner-ribbon top-right sticky blue"><small class="small">{college.colleges[0].promoted ? "PROMOTED":null}</small></div>
+              <div class="opac"></div>
             </div>
 
             <div class="bottom-left">
@@ -31,6 +32,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                   padding: "7px",
                   marginBottom: "7px",
                   fontWeight: "medium",
+                  zIndex:3
                 }}
               >
                 {college.colleges[0].tags[0]}
@@ -45,6 +47,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                   marginBottom: "7px",
                   fontWeight: "medium",
                   marginLeft: "10px",
+                  zIndex:3
                 }}
               >
                 {college.colleges[0].tags[1]}
@@ -52,7 +55,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
             </div>
             <div
               class="bottom-right"
-              style={{ color: "white", marginBottom: "18px" }}
+              style={{ color: "white", marginBottom: "18px",zIndex:"3" }}
             >
                 {college.colleges[0].ranking}
             </div>
@@ -66,6 +69,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                 borderRadius: "5px",
                 boxShadow: "5px 10px 18px #888888",
                 padding: "5px",
+                zIndex:3
               }}
             >
               <b>3.9</b>/5
@@ -202,6 +206,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                 style={{ objectFit: "cover"}}
               />
               <div class="corner-ribbon top-right sticky blue"><small class="small">{college.colleges[1].promoted ? "PROMOTED":null}</small></div>
+              <div class="opac"></div>
             </div>
 
             <div class="bottom-left">
@@ -214,6 +219,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                   padding: "7px",
                   marginBottom: "7px",
                   fontWeight: "medium",
+                  zIndex:3
                 }}
               >
                 {college.colleges[1].tags[0]}
@@ -228,6 +234,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                   marginBottom: "7px",
                   fontWeight: "medium",
                   marginLeft: "10px",
+                  zIndex:3
                 }}
               >
                 {college.colleges[1].tags[1]}
@@ -235,7 +242,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
             </div>
             <div
               class="bottom-right"
-              style={{ color: "white", marginBottom: "18px" }}
+              style={{ color: "white", marginBottom: "18px",zIndex:"15"}}
             >
                 {college.colleges[1].ranking}
             </div>
@@ -247,7 +254,7 @@ function CollegeDetails({college_name,promoted,original_fees,fees_cycle,ranking,
                 backgroundColor: "#f5a821",
                 color: "white",
                 borderRadius: "5px",
-                boxShadow: "5px 10px 18px #888888",
+                zIndex:3,
                 padding: "5px",
               }}
             >
